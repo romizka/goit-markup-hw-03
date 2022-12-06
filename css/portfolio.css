@@ -20,6 +20,45 @@ body {
     background-color: #fff;
     font-size: 14px;
     letter-spacing: 0.03em;
+    width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    border-bottom: 1px solid var(--beige-3);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.flex-nav-container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-inside-nav {
+    display:flex;
+    align-items: center;
+}
+
+.menu {
+    margin-left: 93px;
+    display: flex;
+}
+
+.menu li {
+    margin: 32px 46px;
+    }
+    
+.contact {
+    display:flex;
+}
+
+.contact li {
+    margin: 0 50px;
 }
 
 button {
@@ -90,6 +129,11 @@ button {
     line-height: 1.62;
     letter-spacing: 0.03em;
     color: var(--white);
+    display: flex;
+}
+
+.filter li {
+    margin: 0 8px;
 }
 
 .button-filter {
@@ -124,24 +168,52 @@ button {
     letter-spacing: 0.03em;
     color: var(--light-grey);
 }
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
+.portfolio-item {
+    width: calc((100%-60px) / 3);
+    
+}
 footer {
     background-color: var(--dark-grey);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.logo-footer {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--blue);
+    text-decoration: none;
+    padding-bottom: 20px;
 }
 
 address {
     font-style: normal;
 }
+
 .address-link {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--white);
 }
+
+.address li {
+    padding-bottom: 9px;
+}
+
 .address-link:hover, .address-link:focus{
     color: var(--blue);
 }
+
 .address-transparent {
     color: rgba(255, 255, 255, 0.6);
 }
-
