@@ -44,6 +44,10 @@ header {
     display:flex;
     justify-content: space-between;
     align-items: center;
+    /* height: 80px; */
+    /* padding-left: 215px;
+    padding-right: 227px;
+    margin:0; */
 }
 
 .flex-inside-nav {
@@ -97,10 +101,15 @@ button {
     color: var(--main-grey);
 }
 
+.contact-link:active, .contact-link:hover, .contact-link:focus {
+    color: var(--blue);
+}
+
 .hero-button:hover, .hero-button:focus {
     color:var(--white);
     background-color: var(--blue);
 }
+
 
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -112,9 +121,6 @@ button {
     text-decoration: none;
 }
 
-.contact-link:active, .contact-link:hover, .contact-link:focus {
-    color: var(--blue);
-}
 
 .contact {
     font-weight: 500;
@@ -122,6 +128,9 @@ button {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--light-grey);
+}
+.contact:active, .contact:hover, .contact:focus {
+    color: var(--blue);
 }
 
 .hero {

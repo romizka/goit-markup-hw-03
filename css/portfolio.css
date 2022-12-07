@@ -14,6 +14,11 @@
 
 /* colors end */
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--main-grey);
@@ -33,10 +38,17 @@ header {
     margin: 0 auto;
 }
 
+.section {
+    padding: 94px 0 94px 0;
+}
+
 .flex-nav-container {
     display:flex;
     justify-content: space-between;
     align-items: center;
+    /* height: 80px; */
+    /* padding-left: 215px;
+    padding-right: 227px; */
 }
 
 .flex-inside-nav {
@@ -54,7 +66,7 @@ header {
     }
     
 .contact {
-    display:flex;
+    display: flex;
 }
 
 .contact li {
@@ -100,13 +112,15 @@ button {
     color: var(--blue);
 }
 
-
 .contact {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color:  var(--light-grey);
+    color: var(--light-grey);
+}
+.contact:active, .contact:hover, .contact:focus {
+    color: var(--blue);
 }
 
 .visually-hidden {
@@ -130,6 +144,7 @@ button {
     letter-spacing: 0.03em;
     color: var(--white);
     display: flex;
+    justify-content: center;
 }
 
 .filter li {
@@ -137,14 +152,13 @@ button {
 }
 
 .button-filter {
-    width: 93px;
-    height: 38px;
     background: var(--beige-2);
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
+    padding: 6px 22px;
 }
 
 .button-filter:hover, .button-filter:focus {
@@ -160,6 +174,8 @@ button {
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
+    margin: 0;
+    padding: 20px 24px 4px 24px;
 }
 
 .portfolio-type {
@@ -167,7 +183,10 @@ button {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--light-grey);
+    padding: 4px 24px 20px 24px;
+    margin:0;
 }
+
 .portfolio-grid {
     display: flex;
     flex-wrap: wrap;
@@ -175,7 +194,12 @@ button {
 }
 
 .portfolio-item {
-    width: calc((100%-60px) / 3);
+    width: calc((100% - 60px) / 3);
+}
+
+.border-portfolio-item {
+    border: 1px solid var(--beige-1);
+    border-top: none;
 }
 
 footer {
