@@ -178,6 +178,10 @@ button {
 
 }
 
+.portfolio-list {
+    padding-top: 0;
+}
+
 .portfolio-name {
     font-weight: 700;
     font-size: 18px;
