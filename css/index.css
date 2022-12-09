@@ -16,7 +16,6 @@
 * {
     padding: 0;
     margin:0;
-    box-sizing: border-box;
 }
 
 /* dodałam dodatkowy reset, ponieważ pomimo zastosowania normalizotra pojawiały się dziwne paddingi np. padding-inline-start: 40px; */
@@ -27,9 +26,18 @@ body {
     background-color: var(--white);
     font-size: 14px;
     letter-spacing: 0.03em;
-    width: 1600px;
-    margin: 0 auto;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
 
 header {
     border-bottom: 1px solid var(--beige-3);
@@ -38,34 +46,29 @@ header {
 .container {
     width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .flex-nav-container {
     display:flex;
-    justify-content: space-between;
     align-items: center;
-    /* height: 80px; */
-    /* padding-left: 215px;
-    padding-right: 227px;
-    margin:0; */
 }
 
-.flex-inside-nav {
-    display:flex;
-    align-items: center;
+.nav-menu {
+    margin-left: 93px;
+    
 }
 
 .menu {
-    margin-left: 93px;
     display: flex;
+    gap: 46px;
 }
 
-.menu li {
-    margin: 32px 46px;
-    }
     
-.contact {
+.contact-list {
     display:flex;
+    gap: 50px;
+    margin-left: auto;
 }
 
 .contact li {
@@ -75,6 +78,9 @@ header {
 button {
     cursor: pointer;
     font-family: inherit;
+    display: block;
+    border: none;
+    border-radius: 4px;
 }
 
 .list {
@@ -99,6 +105,8 @@ button {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-grey);
+    padding: 32px 0;
+    display: block;
 }
 
 .contact-link:active, .contact-link:hover, .contact-link:focus {
@@ -135,7 +143,7 @@ button {
 
 .hero {
     background-color: var(--dark-grey);
-    height: 600px;
+    padding: 200px 0;
 }
 
 .header {
@@ -145,25 +153,25 @@ button {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white);
+    width: 696px;
     text-align: center;
-    margin: 0;
-    padding: 200px 452px 0 453px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .hero-button {
-    width: 200px;
-    height: 50px;
+    min-width: 200px;
     background-color: var(--blue);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--white);
-    margin: 30px 700px 200px 700px;
+    margin: 0 auto;
+    margin-top: 30px;
     }
 
 .visually-hidden {
@@ -191,7 +199,7 @@ button {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .advantages p {
@@ -199,7 +207,7 @@ button {
     color: var(--light-grey);
 }
 
-.flex-advantages ul {
+.flex-advantages {
     display: flex;
     gap: 30px;
 
@@ -210,10 +218,14 @@ button {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
-.flex-activities ul {
+.activities {
+    padding-top:0;
+}
+
+.flex-activities {
     display: flex;
     gap: 30px;
 }
@@ -239,10 +251,9 @@ button {
     text-align: center;
 }
 
-.flex-team ul {
+.flex-team {
     display: flex;
     gap: 30px;
-    padding-top: 50px;
 }
 
 .team li {
