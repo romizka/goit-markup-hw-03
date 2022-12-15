@@ -1,4 +1,3 @@
-
 /* colors  */
 
 :root { --main-grey: #212121; 
@@ -47,8 +46,8 @@ header {
     padding: 0 15px;
 }
 
-.section {
-    padding: 94px 0 94px 0;
+section {
+    padding: 94px 0;
 }
 
 .flex-nav-container {
@@ -84,15 +83,19 @@ button {
     border: none;
     border-radius: 4px;
 }
+
 .list {
     list-style: none;
 }
+
 .link {
     text-decoration: none;
 }
+
 .logo-span {
     color: var(--black)
 }
+
 .logo-footer-span {
     color: var(--white);
 }
@@ -147,17 +150,10 @@ button {
   }
 
 .filter {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.03em;
-    color: var(--white);
     display: flex;
     justify-content: center;
-}
-
-.filter li {
-    margin: 0 8px;
+    gap: 8px;
+    margin-bottom: 50px;
 }
 
 .button-filter {
@@ -165,9 +161,10 @@ button {
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
+    letter-spacing: 0.03em;
     line-height: 1.62;
     text-align: center;
-    padding: 6px 22px;
+    padding: 6px 25px;
 }
 
 .button-filter:hover, .button-filter:focus {
@@ -175,7 +172,6 @@ button {
     background-color: var(--blue);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-
 }
 
 .portfolio-list {
@@ -188,7 +184,6 @@ button {
     line-height: 2.0;
     letter-spacing: 0.06em;
     margin: 0;
-    padding: 20px 24px 4px 24px;
 }
 
 .portfolio-type {
@@ -196,8 +191,7 @@ button {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--light-grey);
-    padding: 4px 24px 20px 24px;
-    margin:0;
+    margin-top: 4px;
 }
 
 .portfolio-grid {
@@ -206,13 +200,10 @@ button {
     gap: 30px;
 }
 
-.portfolio-item {
-    width: calc((100% - 60px) / 3);
-}
-
 .border-portfolio-item {
     border: 1px solid var(--beige-1);
     border-top: none;
+    padding: 20px 24px;
 }
 
 footer {
@@ -229,7 +220,8 @@ footer {
     letter-spacing: 0.03em;
     color: var(--blue);
     text-decoration: none;
-    padding-bottom: 20px;
+    display: block;
+    margin-bottom: 20px;
 }
 
 address {
@@ -243,8 +235,8 @@ address {
     color: var(--white);
 }
 
-.address li {
-    padding-bottom: 9px;
+.address li:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .address-link:hover, .address-link:focus{

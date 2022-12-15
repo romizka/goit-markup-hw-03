@@ -166,6 +166,7 @@ button {
     color: var(--white);
     margin: 0 auto;
     margin-top: 30px;
+    padding: 10px 42px;
     }
 
     .hero-button:hover, .hero-button:focus {
@@ -233,13 +234,17 @@ button {
     background-color: var(--beige-2);
 }
 
+.personal-data {
+    padding: 30px 0;
+}
+
 .team-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-align: center;
-    padding: 30px 0 10px 0;
+    margin-bottom: 10px;
 }
 
 .team-position {
@@ -260,7 +265,6 @@ button {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     width: 270px;
-    height: 368px;
 }
 
 footer {
@@ -277,22 +281,23 @@ footer {
     letter-spacing: 0.03em;
     color: var(--blue);
     text-decoration: none;
-    padding-bottom: 20px;
+    display: block;
+    margin-bottom: 20px;
 }
 
 address {
     font-style: normal;
 }
 
-.address-link {
+.address-link{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--white);
 }
 
-.address li {
-    padding-bottom: 9px;
+.address li:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .address-link:hover, .address-link:focus{
